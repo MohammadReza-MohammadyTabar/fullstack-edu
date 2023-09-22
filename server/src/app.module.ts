@@ -9,7 +9,7 @@ import * as process from "process";
 
 
 @Module({
-  imports: [MongooseModule.forRoot(process.env.MONGO_DB),CoursesModule,AuthorModule,ConfigModule.forRoot({
+  imports: [MongooseModule.forRoot('mongodb+srv://Maxell:Mohammad1211@nodeappproject.ef1yq2p.mongodb.net/elearn?retryWrites=true&w=majority\n'),CoursesModule,AuthorModule,ConfigModule.forRoot({
     isGlobal: true,
   })],
   controllers: [AppController],
